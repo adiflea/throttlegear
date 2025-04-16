@@ -1,0 +1,973 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ThrottleGear - Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+
+
+
+ 
+    
+    .home-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .home-button svg {
+      width: 32px;
+      height: 32px;
+      fill: #000;
+      transition: fill 0.3s ease;
+    }
+
+    .home-button:hover svg {
+      fill: #555; /* darker on hover */
+    }
+
+    .cart-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cart-button svg {
+      width: 32px;
+      height: 32px;
+      fill: #000;
+      transition: fill 0.3s ease;
+    }
+
+    .cart-button:hover svg {
+      fill: #555; /* darker on hover */
+    }
+
+
+.wishlist-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .wishlist-button svg {
+      width: 32px;
+      height: 32px;
+      fill: #000;
+      transition: fill 0.3s ease;
+    }
+
+    .wishlist-button:hover svg {
+      fill: #555; /* darker on hover */
+    }
+  
+    
+  </style>
+
+
+
+
+</head>
+
+<body class="bg-gray-100 p-4">
+
+   
+  <a href="index.html" class="home-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+      <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+    </svg>
+  </a>
+
+  <a href="cart.html" class="cart-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+    </svg>
+  </a>
+
+  <a href="wishlist.html" class="wishlist-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+    </svg>
+  </a>
+
+ 
+
+   
+   
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+  
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding jacket/ja1.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Jacket</h2>
+      <p class="text-gray-600 mt-2">Premium leather riding Jacket.</p>
+      <p class="text-gray-600 mt-2">5000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>US 7</option>
+        <option>US 8</option>
+        <option>US 9</option>
+        <option>US 10</option>
+        <option>US 11</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+  
+ 
+
+   
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding jacket/ja2.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Jacket</h2>
+      <p class="text-gray-600 mt-2">Womens riding Jacket.</p>
+      <p class="text-gray-600 mt-2">5000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>US 7</option>
+        <option>US 8</option>
+        <option>US 9</option>
+        <option>US 10</option> 
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding jacket/ja3.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Jacket</h2>
+      <p class="text-gray-600 mt-2"> light riding Jacket.</p>
+      <p class="text-gray-600 mt-2">8000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>US 7</option>
+        <option>US 8</option>
+        <option>US 9</option>
+        <option>US 10</option>
+        <option>US 11</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding jacket/ja4.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Jacket</h2>
+      <p class="text-gray-600 mt-2"> Best riding Jacket.</p>
+      <p class="text-gray-600 mt-2">8000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>US 7</option>
+        <option>US 8</option>
+        <option>US 9</option>
+        <option>US 10</option>
+        <option>US 11</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding jacket/ja5.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Jacket</h2>
+      <p class="text-gray-600 mt-2"> ADV. riding Jacket.</p>
+      <p class="text-gray-600 mt-2">9000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>US 7</option>
+        <option>US 8</option>
+        <option>US 9</option>
+        <option>US 10</option>
+        <option>US 11</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding jacket/ja6.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Jacket</h2>
+      <p class="text-gray-600 mt-2">Cruser riding Jacket.</p>
+      <p class="text-gray-600 mt-2">10000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>US 7</option>
+        <option>US 8</option>
+        <option>US 9</option>
+        <option>US 10</option>
+        <option>US 11</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding jacket/ja7.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Jacket</h2>
+      <p class="text-gray-600 mt-2">Premium ADV. riding Jacket.</p>
+      <p class="text-gray-600 mt-2">13000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>US 7</option>
+        <option>US 8</option>
+        <option>US 9</option>
+        <option>US 10</option>
+        <option>US 11</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding jacket/ja8.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Jacket</h2>
+      <p class="text-gray-600 mt-2">Premium riding Jacket.</p>
+      <p class="text-gray-600 mt-2">9000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>US 7</option>
+        <option>US 8</option>
+        <option>US 9</option>
+        <option>US 10</option>
+        <option>US 11</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/thigh bags/tb1.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Thighbag</h2>
+      <p class="text-gray-600 mt-2">Premium thighbag</p>
+      <p class="text-gray-600 mt-2">5000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/thigh bags/tb2.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Thighbag</h2>
+      <p class="text-gray-600 mt-2">Premium thighbag</p>
+      <p class="text-gray-600 mt-2">7000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/thigh bags/tb3.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Thighbag</h2>
+      <p class="text-gray-600 mt-2">Premium thighbag</p>
+      <p class="text-gray-600 mt-2">7000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/thigh bags/tb4.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Thighbag</h2>
+      <p class="text-gray-600 mt-2">Premium thighbag</p>
+      <p class="text-gray-600 mt-2">4000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/thigh bags/tb5.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Thighbag</h2>
+      <p class="text-gray-600 mt-2">Premium thighbag</p>
+      <p class="text-gray-600 mt-2">7000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding pant/rp1.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Pant</h2>
+      <p class="text-gray-600 mt-2">Premium riding pant.</p>
+      <p class="text-gray-600 mt-2">9000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>28</option>
+        <option>32</option>
+        <option>34</option>
+        <option>36</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding pant/rp2.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Pant</h2>
+      <p class="text-gray-600 mt-2">Premium riding pant.</p>
+      <p class="text-gray-600 mt-2">7000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>28</option>
+        <option>32</option>
+        <option>34</option>
+        <option>36</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding pant/rp3.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Pant</h2>
+      <p class="text-gray-600 mt-2">Premium riding pant.</p>
+      <p class="text-gray-600 mt-2">7000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>28</option>
+        <option>32</option>
+        <option>34</option>
+        <option>36</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding pant/rp4.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Pant</h2>
+      <p class="text-gray-600 mt-2">Premium riding pant.</p>
+      <p class="text-gray-600 mt-2">11000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>28</option>
+        <option>32</option>
+        <option>34</option>
+        <option>36</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding pant/rp5.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Pant</h2>
+      <p class="text-gray-600 mt-2">Premium riding pant.</p>
+      <p class="text-gray-600 mt-2">15000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>28</option>
+        <option>32</option>
+        <option>34</option>
+        <option>36</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding pant/rp6.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Motorcycle Riding Pant</h2>
+      <p class="text-gray-600 mt-2">Premium riding pant.</p>
+      <p class="text-gray-600 mt-2">14000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>28</option>
+        <option>32</option>
+        <option>34</option>
+        <option>36</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/helmet/hell1.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Helmet</h2>
+      <p class="text-gray-600 mt-2"> Premium helmet</p>
+      <p class="text-gray-600 mt-2">7000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+     
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/helmet/hell3.jpeg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Helmet</h2>
+      <p class="text-gray-600 mt-2"> Premium Aerodynamic Helmet</p>
+      <p class="text-gray-600 mt-2">8000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/helmet/hell2.png" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Helmet</h2>
+      <p class="text-gray-600 mt-2">Classic Helmet</p>
+      <p class="text-gray-600 mt-2">10000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/helmet/hell4.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Helmet</h2>
+      <p class="text-gray-600 mt-2">Maxsafe Helmet</p>
+      <p class="text-gray-600 mt-2">9000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/helmet/hell5.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Helmet</h2>
+      <p class="text-gray-600 mt-2"> Premium Helmet</p>
+      <p class="text-gray-600 mt-2">14000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/helmet/hell6.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Helmet</h2>
+      <p class="text-gray-600 mt-2">sturdyhelmet</p>
+      <p class="text-gray-600 mt-2">15000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/helmet/hell7.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Helmet</h2>
+      <p class="text-gray-600 mt-2">Vintage Helmet</p>
+      <p class="text-gray-600 mt-2">12000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/helmet/hell8.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Helmet</h2>
+      <p class="text-gray-600 mt-2"> Premium Sports Helmet</p>
+      <p class="text-gray-600 mt-2">7000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding gloves/rg1.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Riding Gloves</h2>
+      <p class="text-gray-600 mt-2">Roadster Riding Gloves</p>
+      <p class="text-gray-600 mt-2">7000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding gloves/rg2.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Riding Gloves</h2>
+      <p class="text-gray-600 mt-2">Roadster ADV. Riding Gloves</p>
+      <p class="text-gray-600 mt-2">10000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+    
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding gloves/rg3.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Riding Gloves</h2>
+      <p class="text-gray-600 mt-2">Classic Riding Gloves</p>
+      <p class="text-gray-600 mt-2">13000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding gloves/rg4.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Riding Gloves</h2>
+      <p class="text-gray-600 mt-2">Tuff Riding Gloves</p>
+      <p class="text-gray-600 mt-2">9000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding gloves/rg5.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Riding Gloves</h2>
+      <p class="text-gray-600 mt-2">Maxsafe Gloves</p>
+      <p class="text-gray-600 mt-2">14000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding shoes/rdb01.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Moto Riding Boots</h2>
+      <p class="text-gray-600 mt-2">Roadster Riding  Boots</p>
+      <p class="text-gray-600 mt-2">10000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>7</option>
+        <option>8</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding shoes/rdb02.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Moto Riding Boots</h2>
+      <p class="text-gray-600 mt-2">Maxsafe Riding  Boots</p>
+      <p class="text-gray-600 mt-2">13000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>7</option>
+        <option>8</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding shoes/rdb03.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Moto Riding Boots</h2>
+      <p class="text-gray-600 mt-2">Roadster ADV. Riding  Boots</p>
+      <p class="text-gray-600 mt-2">16000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>7</option>
+        <option>8</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding shoes/rdb04.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Moto Riding Boots</h2>
+      <p class="text-gray-600 mt-2">ADV. Riding  Boots</p>
+      <p class="text-gray-600 mt-2">18000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>7</option>
+        <option>8</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/riding shoes/rdb05.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Moto Riding Boots</h2>
+      <p class="text-gray-600 mt-2">Premium ADV. Riding  Boots</p>
+      <p class="text-gray-600 mt-2">14000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>7</option>
+        <option>8</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/ridingglasses/rd1.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Moto Riding Glasses</h2>
+      <p class="text-gray-600 mt-2">Eagle ADV. Riding Glasses</p>
+      <p class="text-gray-600 mt-2">5000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/ridingglasses/rd2.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Moto Riding Glasses</h2>
+      <p class="text-gray-600 mt-2">ADV. Riding Glasses</p>
+      <p class="text-gray-600 mt-2">8000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/ridingglasses/rd3.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Moto Riding Glasses</h2>
+      <p class="text-gray-600 mt-2"> Riding Glasses</p>
+      <p class="text-gray-600 mt-2">8000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/ridingglasses/rd4.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Moto Riding Glasses</h2>
+      <p class="text-gray-600 mt-2">Maxsafe Riding Glasses</p>
+      <p class="text-gray-600 mt-2">10000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-card bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center">
+      <img src="Assets/ridingglasses/rd5.jpg" class="w-60 h-80 object-cover rounded-xl" />
+      <h2 class="text-lg font-semibold mt-4">Moto Riding Glasses</h2>
+      <p class="text-gray-600 mt-2">Premium Riding Glasses</p>
+      <p class="text-gray-600 mt-2">13000₹</p>
+      <label class="block mt-3 text-gray-700">Select Size:</label>
+      <select class="mt-1 p-2 border rounded w-full">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+      </select>
+      <div class="mt-4 flex gap-2 w-full">
+        <button class="add-to-cart w-1/2 bg-blue-600 text-white py-2 rounded-xl shadow-md hover:bg-blue-700">Add to Cart</button>
+        <button class="add-to-wishlist w-1/2 bg-gray-300 text-gray-700 py-2 rounded-xl shadow-md hover:bg-gray-400">Wishlist</button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+ 
+
+
+
+  <script>
+
+
+ 
+    function getProductData(card) {
+      return {
+        image: card.querySelector("img").src,
+        name: card.querySelector("h2").innerText,
+        desc: card.querySelectorAll("p")[0].innerText,
+        price: card.querySelectorAll("p")[1].innerText,
+        size: card.querySelector("select").value
+      };
+    }
+
+    document.querySelectorAll(".product-card").forEach(card => {
+      const cartBtn = card.querySelector(".add-to-cart");
+      const wishBtn = card.querySelector(".add-to-wishlist");
+
+      cartBtn.addEventListener("click", () => {
+        const item = getProductData(card);
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.push(item);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert("Added to cart!");
+      });
+
+      wishBtn.addEventListener("click", () => {
+        const item = getProductData(card);
+        let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+        wishlist.push(item);
+        localStorage.setItem("wishlist", JSON.stringify(wishlist));
+        alert("Added to wishlist!");
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wishlist - ThrottleGear</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <h1 class="text-2xl font-bold mb-6">❤️ Your Wishlist</h1>
+  <div id="wishlist-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+  <script>
+    let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const container = document.getElementById("wishlist-container");
+
+    function renderWishlist() {
+      container.innerHTML = "";
+      wishlist.forEach((item, index) => {
+        const card = document.createElement("div");
+        card.className = "bg-white rounded-2xl shadow-xl p-4 flex flex-col items-center";
+        card.innerHTML = `
+          <img src="${item.image}" class="w-60 h-80 object-cover rounded-xl" />
+          <h2 class="text-lg font-semibold mt-4">${item.name}</h2>
+          <p class="text-gray-600 mt-1">${item.desc}</p>
+          <p class="text-gray-600 mt-1">${item.price}</p>
+          <p class="text-sm text-gray-500 mt-1">Size: ${item.size}</p>
+          <div class="flex gap-2 mt-4">
+            <button onclick="addToCart(${index})" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Add to Cart</button>
+            <button onclick="removeItem(${index})" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">Remove</button>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function removeItem(index) {
+      wishlist.splice(index, 1);
+      localStorage.setItem("wishlist", JSON.stringify(wishlist));
+      renderWishlist();
+    }
+
+    function addToCart(index) {
+      cart.push(wishlist[index]);
+      wishlist.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      localStorage.setItem("wishlist", JSON.stringify(wishlist));
+      renderWishlist();
+      alert("Item moved to cart!");
+    }
+
+    renderWishlist();
+  </script>
+</body>
+</html>
